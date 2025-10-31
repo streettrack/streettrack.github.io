@@ -251,7 +251,7 @@ a {
 
 /* line 265, src/assets/scss/_reboot.scss */
 a:hover {
-  color: #35289b;
+  color: #ae1e23;
 }
 
 /* line 277, src/assets/scss/_reboot.scss */
@@ -3701,14 +3701,14 @@ fieldset:disabled .btn {
 .btn-primary:hover {
   color: #f6f9fe;
   background-color: #382ba5;
-  border-color: #35289b;
+  border-color: #ae1e23;
 }
 
 /* line 31, src/assets/scss/mixins/_buttons.scss */
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #f6f9fe;
   background-color: #382ba5;
-  border-color: #35289b;
+  border-color: #ae1e23;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(93, 80, 203, 0.5);
           box-shadow: 0 0 0 0.25rem rgba(93, 80, 203, 0.5);
 }
@@ -3718,7 +3718,7 @@ fieldset:disabled .btn {
 .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
   color: #f6f9fe;
-  background-color: #35289b;
+  background-color: #ae1e23;
   border-color: #322692;
 }
 
@@ -4395,7 +4395,7 @@ fieldset:disabled .btn {
 
 /* line 81, src/assets/scss/_buttons.scss */
 .btn-link:hover {
-  color: #35289b;
+  color: #ae1e23;
 }
 
 /* line 90, src/assets/scss/_buttons.scss */
@@ -5961,7 +5961,7 @@ fieldset:disabled .btn {
 /* line 15, src/assets/scss/_pagination.scss */
 .page-link:hover {
   z-index: 2;
-  color: #35289b;
+  color: #ae1e23;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
@@ -5969,7 +5969,7 @@ fieldset:disabled .btn {
 /* line 23, src/assets/scss/_pagination.scss */
 .page-link:focus {
   z-index: 3;
-  color: #35289b;
+  color: #ae1e23;
   background-color: #e9ecef;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(66, 50, 194, 0.25);
@@ -7937,7 +7937,7 @@ fieldset:disabled .btn {
 
 /* line 6, src/assets/scss/helpers/_colored-links.scss */
 .link-primary:hover, .link-primary:focus {
-  color: #35289b;
+  color: #ae1e23;
 }
 
 /* line 2, src/assets/scss/helpers/_colored-links.scss */
