@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product</title>
+<style>
+.product {
+  max-width: 500px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+.product img { max-width: 100%; border-radius: 6px; margin-bottom: 10px; }
+</style>
+</head>
+
+<body>
+<div id="product-container">Loading product...</div>
+
+<script>
+// Get final segment of URL → /products/BL316 → "BL316"
+const partNum = window.location.pathname.split("/").filter(Boolean).pop();
+
+// Load product database
+fetch("/products-data.html")
+  .then(res => res.text())
+  .then(html => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, "text/html");
+    const json = JSON.parse(doc.getElementById("products-json").textContent);
+
+    const product = json.products.find(p => p.part === partNum);
+    const container = document.getElementById("product-container");
+
+    if (!product) {
+      container.innerHTML = `<h2>Product Not Found</h2>`;
+      return;
+    }
+
+    container.innerHTML = `
+      <div class="product">
+        <h2>${product.name}</h2>
+        <img src="${product.img}" alt="${product.name}">
+        <p><strong>Part #:</strong> ${product.part}</p>
+        <p><strong>Bore:</strong> ${product.bore}"</p>
+        <p><strong>OD:</strong> ${product.od}"</p>
+        <p><strong>Price:</strong> $${product.price}</p>
+        <p>${product.description}</p>
+      </div>
+    `;
+  });
+</script>
+
+</body>
+</html>
