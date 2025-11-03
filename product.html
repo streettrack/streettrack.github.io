@@ -96,8 +96,8 @@ fetch("products-data.html")
 
     container.innerHTML = `
       <div class="product">
-          <div style="width:50%;"><img src="${product.img}" alt="${product.name}"></div>
-          <div style="width:50%;">
+          <div style="width:50%; float: left;"><img src="${product.img}" alt="${product.name}"></div>
+          <div style="width:50%; float: left;">
             <h2>${product.name}</h2>
             <p><strong>Part #:</strong> ${product.part}</p>
             <p>${product.description}</p>
