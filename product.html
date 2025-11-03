@@ -92,10 +92,10 @@ fetch("products-data.html")
     }
 
     container.innerHTML = `
-      <div class="product">
+      <div class="product" style="float: left">
         <img src="${product.img}" alt="${product.name}">
       </div>
-      <div class="product">
+      <div class="product" style="float: left">
         <h2>${product.name}</h2>
         <p><strong>Part #:</strong> ${product.part}</p>
         <p>${product.description}</p>
