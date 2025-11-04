@@ -19,7 +19,26 @@
 
 </head>
 
+    <style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* this pushes footer to bottom */
+}        
+    </style>
+
 <body>
+<div class="page-wrapper">
+    
    <!-- Header -->
     <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
         <div class="container d-flex justify-content-between align-items-center">
@@ -54,7 +73,7 @@
     <!-- Close Header -->
 
 
- 
+ <main>
 
 
     <!-- Start Contact -->
@@ -126,7 +145,7 @@
     </section>
     <!-- End Contact -->
 
-
+</main>
     <!-- Start Footer -->
     <footer>
        
@@ -154,10 +173,11 @@
     <!-- Custom -->
     <script src="assets/js/custom.js"></script>
 
+    </div>
 </body>
 
-
 </html>
+
 
 
 
