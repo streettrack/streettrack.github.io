@@ -130,7 +130,8 @@
 
             <!-- Start Contact Form -->
             <div class="col-lg-8 ">
-                <form class="contact-form row" method="post" action="#" role="form">
+                <form class="contact-form row" method="POST" action="https://api.web3forms.com/submit">
+    <input type="hidden" name="access_key" value="13ea9574-6353-45c1-84ca-58425bb85c02">
 
                     <div class="col-lg-6 mb-4">
                         <div class="form-floating">
@@ -169,11 +170,13 @@
 
                     <div class="col-12">
                         <div class="form-floating mb-3">
-                            <textarea class="form-control light-300" rows="8" placeholder="Message" id="floatingtextarea"></textarea>
+                            <textarea class="form-control light-300" rows="8" placeholder="Message" id="floatingtextarea" name="message"></textarea>
                             <label for="floatingtextarea light-300">Message</label>
                         </div>
                     </div><!-- End Textarea Message -->
 
+                    <input type="hidden" name="redirect" value="https://streettrack.net/thank-you">
+                    
                     <div class="col-md-12 col-12 m-auto text-end">
                         <button type="submit" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Send Message</button>
                     </div>
@@ -323,6 +326,7 @@
 
 
 </html>
+
 
 
 
