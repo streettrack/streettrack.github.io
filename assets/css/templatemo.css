@@ -67,7 +67,7 @@ p, a {font-weight: 400;}
   font-size: 4em;
 }
 #index_banner .carousel-inner {
-  height: 80vh;
+  height: 70vh;
 }
 #index_banner .carousel-indicators li,
 #index_banner .carousel-indicators.active {
@@ -191,6 +191,7 @@ footer a.text-light:hover {
   transition-duration: 0.15s;
 
 }
+
 
 
 
