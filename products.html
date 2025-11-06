@@ -205,28 +205,17 @@
     <!-- Custom -->
     <script src="assets/js/custom.js"></script>
 
-    <script>
+  <script>
 document.addEventListener("DOMContentLoaded", function () {
-    // Read ?filter= value from URL
     const params = new URLSearchParams(window.location.search);
     const filterParam = params.get("filter");
-
     if (filterParam) {
-        let selector = "*"; // default ALL
-
-        if (filterParam !== "all") {
-            selector = "." + filterParam;
-        }
-
-        // Trigger isotope filtering
-        $('.projects').isotope({ filter: selector });
-
-        // Highlight correct filter button
-        $(".filter-btn").removeClass("active shadow");
-        $(`.filter-btn[data-filter="${selector}"]`).addClass("active shadow");
-        
-        // Scroll to products (optional UX)
-        window.scrollTo({ top: 400, behavior: "smooth" });
+        const selector = filterParam === "all" ? "*" : "." + filterParam;
+        setTimeout(() => {
+            $('.projects').isotope({ filter: selector });
+            $(".filter-btn").removeClass("active shadow");
+            $(`.filter-btn[data-filter="${selector}"]`).addClass("active shadow");
+        }, 500);
     }
 });
 </script>
@@ -290,6 +279,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 </body>
 
 </html>
+
 
 
 
