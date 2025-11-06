@@ -19,15 +19,17 @@
 
 
     <style>
-        .projects {
+      /* Product grid container */
+.projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem; /* space between cards */
+  gap: 2rem; /* uniform gap horizontally & vertically */
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-/* Card container */
+/* Individual product cards */
 .service-work.card {
   border: 1px solid #ddd;
   border-radius: 1rem;
@@ -35,44 +37,44 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   background-color: #fff;
   width: 100%;
-  max-width: 360px; /* uniform card width */
-  padding: .7rem;
+  max-width: 360px;
+  padding: 1rem;
   box-sizing: border-box;
+  margin-bottom: 2rem; /* extra bottom margin to prevent row collisions */
 }
 
-/* Subtle hover effect */
+/* Hover effect */
 .service-work.card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Uniform image display while keeping aspect ratio */
+/* Uniform image area */
 .service-work.card img.card-img-top {
   width: 100%;
-  height: 220px; /* set a consistent height */
-  object-fit: contain; /* keep original image ratio, no crop/stretch */
+  height: 220px;
+  object-fit: contain;
   padding: 10px;
-  background-color: #f8f8f8; /* helps unify the look if images are different shapes */
+  background-color: #f8f8f8;
   border-bottom: 1px solid #eee;
 }
 
-/* Card body spacing */
+/* Body area spacing */
 .service-work .card-body {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  min-height: 140px; /* ensures text areas align vertically */
+  padding: 1rem 0;
+  min-height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
 }
 
-/* Card title */
+/* Title */
 .service-work .card-title {
   font-size: 1.05rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
-  min-height: 3rem; /* helps equalize title height */
+  min-height: 3rem;
 }
 
 /* Part number text */
@@ -288,6 +290,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 </body>
 
 </html>
+
 
 
 
