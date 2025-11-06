@@ -8987,11 +8987,11 @@ fieldset:disabled .btn {
   margin-left: 1.5rem !important;
 }
 
-/* line 50, src/assets/scss/mixins/_utilities.scss */
+/* line 50, src/assets/scss/mixins/_utilities.scss 
 .mx-5 {
   margin-right: 3rem !important;
   margin-left: 3rem !important;
-}
+}*/
 
 /* line 50, src/assets/scss/mixins/_utilities.scss */
 .mx-auto {
